@@ -6,8 +6,14 @@ import CV from "../../src/assets/AmitKCV.pdf";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleMenuToggle = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen(prevState => !prevState);
   };
+  const handleLinkClick = () => {
+    if (menuOpen) {
+      setMenuOpen(false);
+    }
+  };
+
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
@@ -128,7 +134,7 @@ const Navbar = () => {
                 <a
                   href="#Home"
                   className="text-white text-lg hover:text-purple-500 hover:font-bold"
-                  onClick={handleMenuToggle}
+                  onClick={handleLinkClick}
                 >
                   Home
                 </a>
@@ -137,7 +143,7 @@ const Navbar = () => {
                 <a
                   href="#About"
                   className="text-white text-lg hover:text-purple-500 hover:font-bold"
-                  onClick={handleMenuToggle}
+                  onClick={handleLinkClick}
                 >
                   About Me
                 </a>
@@ -146,7 +152,7 @@ const Navbar = () => {
                 <a
                   href="#Skills"
                   className="text-white text-lg hover:text-purple-500 hover:font-bold"
-                  onClick={handleMenuToggle}
+                  onClick={handleLinkClick}
                 >
                   Skills
                 </a>
@@ -155,7 +161,7 @@ const Navbar = () => {
                 <a
                   href="#Experience"
                   className="text-white text-lg hover:text-purple-500 hover:font-bold"
-                  onClick={handleMenuToggle}
+                  onClick={handleLinkClick}
                 >
                   Experience
                 </a>
@@ -164,7 +170,7 @@ const Navbar = () => {
                 <a
                   href="#Projects"
                   className="text-white text-lg hover:text-purple-500 hover:font-bold"
-                  onClick={handleMenuToggle}
+                  onClick={handleLinkClick}
                 >
                   Projects
                 </a>
@@ -173,7 +179,7 @@ const Navbar = () => {
                 <a
                   href="#Contact"
                   className="text-white text-lg hover:text-purple-500 hover:font-bold"
-                  onClick={handleMenuToggle}
+                  onClick={handleLinkClick}
                 >
                   Contact Me
                 </a>
