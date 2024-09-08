@@ -44,7 +44,7 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
-            <div className="hover:bg-white p-2 rounded-lg ">
+            {/* <div className="hover:bg-white p-2 rounded-lg ">
               <a
                 href={CV}
                 target="_blank"
@@ -56,7 +56,7 @@ const Hero = () => {
                   Resume
                 </h2>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">

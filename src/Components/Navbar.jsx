@@ -178,6 +178,15 @@ const Navbar = () => {
                   Contact Me
                 </a>
               </li>
+              <li>
+                <a
+                  href={CV}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white text-lg hover:text-purple-500 hover:font-bold"
+                  download="AmitCV.pdf"
+                >Resume</a>
+              </li>
             </ul>
           </div>
         </div>
