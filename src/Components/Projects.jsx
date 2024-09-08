@@ -2,7 +2,6 @@ import React from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
-
 const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4" id="Projects">
@@ -26,8 +25,7 @@ const Projects = () => {
             >
               <img
                 src={project.image}
-                width={300}
-                height={400}
+                style={{height:"165px"}}
                 alt={project.title}
                 className="mb-6 rounded"
               />
@@ -39,8 +37,15 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <a href={project.link} className="mb-2 m-3 font-semibold hover:text-purple-400" target="_blank" rel="noopener noreferrer">{project.title}</a>
-              <p className="mb-7 m-3 text-neutral-400">{project.description}</p>
+              <a
+                href={project.link}
+                className="mb-2 mx-4 font-semibold hover:text-purple-400"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.title}
+              </a>
+              <p className="mb-5 mx-4 text-neutral-400">{project.description}</p>
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}

@@ -1,6 +1,6 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/AmitProfile.jpeg";
-import CV from "../../src/assets/AmitCV.pdf";
+import CV from "../../src/assets/AmitKCV.pdf";
 
 import { motion } from "framer-motion";
 
@@ -48,9 +48,9 @@ const Hero = () => {
               <a
                 href={CV}
                 target="_blank"
-                rel="noopener noreferrer" 
+                rel="noopener noreferrer"
                 className="text-purple-400 hover:text-purple-500 md:hidden "
-                download="AmitCV.pdf" 
+                download="AmitCV.pdf"
               >
                 <h2 className="text-transparent bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 hover:text-purple-900 bg-clip-text hover:bg-white text-center">
                   Resume

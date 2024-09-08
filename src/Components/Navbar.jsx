@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
-import CV from "../../src/assets/AmitCV.pdf";
+import CV from "../../src/assets/AmitKCV.pdf";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const handleMenuToggle=()=>{
+  const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
-  }
-  useEffect(()=>{
-    if(menuOpen){
-      document.body.style.overflow="hidden";
+  };
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
     }
-    else{
-      document.body.style.overflow="auto";
-    }
-  },[menuOpen])
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menuOpen]);
   return (
     <>
       <nav className="top-0 z-50 mb-20 flex items-center justify-between px-3 py-5">
@@ -26,22 +28,22 @@ const Navbar = () => {
           </span>
         </div>
 
-         {/* Menu Icon (Mobile) */}
-      <div className="md:hidden">
-        {menuOpen ? (
-          <IoClose
-            className=" hover:text-purple-700 hover:scale-110 transition-transform duration-300"
-            size={30}
-            onClick={handleMenuToggle}
-          />
-        ) : (
-          <TiThMenu
-            className="hover:text-purple-700 hover:scale-110 transition-transform duration-300"
-            size={30}
-            onClick={handleMenuToggle}
-          />
-        )}
-      </div>
+        {/* Menu Icon (Mobile) */}
+        <div className="md:hidden">
+          {menuOpen ? (
+            <IoClose
+              className=" hover:text-purple-700 hover:scale-110 transition-transform duration-300"
+              size={30}
+              onClick={handleMenuToggle}
+            />
+          ) : (
+            <TiThMenu
+              className="hover:text-purple-700 hover:scale-110 transition-transform duration-300"
+              size={30}
+              onClick={handleMenuToggle}
+            />
+          )}
+        </div>
 
         {/* Contents (Desktop) */}
         <div className="hidden md:flex flex-grow justify-center">

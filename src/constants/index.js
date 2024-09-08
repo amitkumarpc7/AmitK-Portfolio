@@ -12,50 +12,54 @@ export const EXPERIENCES = [
     role: "Full Stack Developer Apprentice",
     company: "Acciojob .",
     description: `Learning full stack development under the guidance of teachers and mentors from reputable companies such as Google, Flipkart, and Myntra. Created multiple frontend projects and solved over 250+ DSA (Data Structures and Algorithms) questions on the AccioJob platform.`,
-    // technologies: ["Javascript", "React.js", "DSA", "mongoDB",'Express.js'],
   },
   {
     year: "2021 - 2023",
     role: "Helpdesk Engineer",
     company: "NSEIT Limited",
     description: `Took ownership of customer-reported issues, seeing them through to resolution and maintaining customer satisfaction. Performed in-depth troubleshooting tailored to the customer’s skill level, ensuring clear communication and effective resolution. Collaborated with cross-functional teams to escalate complex technical issues and facilitate knowledge sharing, contributing to continuous improvement initiatives within the organization.`,
-    // technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
   },
-  
 ];
 
 export const PROJECTS = [
   {
     title: "Movix-App (For the Entertainment Geeks)",
     image: project1,
-    link: "https://podcast-platform7.netlify.app/",
+    link: "https://movies-movix-app.netlify.app/",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS","Javascript", "React", "Redux","Material-UI" ],
+      " Developed Movix app using React and Redux, enabling seamless search for movies and TV shows. Designed dynamic homepage with trending, top-rated, and popular carousels for engaging user experience",
+    technologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Redux",
+      "Material-UI",
+    ],
   },
   {
     title: "The Bloggggg (MERN Stack)",
     image: project2,
-    link: "https://podcast-platform7.netlify.app/",
+    link: "https://blog-app-22b8.onrender.com/",
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "Tailwind-CSS", "React", "Node.js","Express","Mongo DB"],
+      "Developed a dynamic blog management application using the MERN stack (MongoDB, Express.js,React.js, Node.js) and Tailwind CSS. A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+    technologies: [
+      "HTML",
+      "Tailwind-CSS",
+      "React",
+      "Node.js",
+      "Express",
+      "Mongo DB",
+    ],
   },
   {
     title: "Podcast Platform",
     image: project3,
     link: "https://podcast-platform7.netlify.app/",
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "Javascript","React","Redux","Firebase"],
+      "Developed a sophisticated Podcast Platform, implementing robust authentication mechanisms using Firebase.  Leveraged advanced React components and state management techniques, while integrating Redux Toolkit to efficiently handle user and podcast state, ensuring a dynamic and interactive user experience.",
+    technologies: ["HTML", "CSS", "Javascript", "React", "Redux", "Firebase"],
   },
-  // {
-  //   title: "Blogging Platform",
-  //   image: project4,
-  //   description:
-  //     "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-  //   technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  // },
 ];
 
 export const CONTACT = {
