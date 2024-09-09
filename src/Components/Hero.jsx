@@ -44,19 +44,6 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
-            {/* <div className="hover:bg-white p-2 rounded-lg ">
-              <a
-                href={CV}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-500 md:hidden "
-                download="AmitCV.pdf"
-              >
-                <h2 className="text-transparent bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 hover:text-purple-900 bg-clip-text hover:bg-white text-center">
-                  Resume
-                </h2>
-              </a>
-            </div> */}
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
