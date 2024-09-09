@@ -1,6 +1,5 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/AmitProfile.jpeg";
-import CV from "../../src/assets/AmitKCV.pdf";
 
 import { motion } from "framer-motion";
 

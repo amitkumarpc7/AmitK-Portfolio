@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
-import CV from "../../src/assets/AmitKCV.pdf";
+import CV from "../../src/assets/AmitKFinalCV.pdf";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
