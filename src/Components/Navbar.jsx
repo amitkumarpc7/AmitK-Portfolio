@@ -124,7 +124,7 @@ const Navbar = () => {
         {/* Mobile Screen */}
         <div
           style={{ transition: "transform 0.3s ease,opacity 0.3s ease" }} // Apply transition to transform
-          className={`md:hidden fixed inset-0 top-16 left-0 w-full h-[calc(100dvh)] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-30%,rgba(120,119,198,0.3),rgba(255,255,255,0))] transition-transform transform ${
+          className={`md:hidden fixed inset-0 top-16 left-0 w-full h-[calc(50dvh)] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-30%,rgba(120,119,198,0.3),rgba(255,255,255,0))] transition-transform transform ${
             menuOpen
               ? "opacity-100 translate-y-0 flex"
               : "opacity-0 translate-y-100 hidden "

@@ -16,7 +16,7 @@ const Projects = () => {
       <div>
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            {/* division for Images of project */}
+            {/* Division for Images of project */}
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -25,12 +25,12 @@ const Projects = () => {
             >
               <img
                 src={project.image}
-                style={{height:"165px"}}
+                style={{ height: "165px" }}
                 alt={project.title}
                 className="mb-6 rounded"
               />
             </motion.div>
-            {/* division for project details */}
+            {/* Division for project details */}
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
@@ -45,15 +45,19 @@ const Projects = () => {
               >
                 {project.title}
               </a>
-              <p className="mb-5 mx-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 m-3 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
-                >
-                  {tech}
-                </span>
-              ))}
+              <p className="mb-5 mx-4 text-neutral-400">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2 mx-4">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-xs sm:text-sm font-medium text-purple-800"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           </div>
         ))}
